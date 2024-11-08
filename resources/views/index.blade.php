@@ -1,4 +1,4 @@
-<!-- @extends('layouts.app')
+@extends('layouts.app')
 
 @section('content')
 <form method="GET" action="{{ route('products.index') }}">
@@ -37,18 +37,4 @@
     </tbody>
 </table>
 
-{{ $products->appends(request()->query())->links() }} -->
-
-<!-- resources/views/products/index.blade.php -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Products</title>
-</head>
-<body>
-    <h1>All Products</h1>
-    <p>This is the index page for products.</p>
-</body>
-</html>
+{{ $products->appends(request()->query())->links() }}
